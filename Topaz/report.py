@@ -13,42 +13,23 @@ df['timeStamp'] = pd.to_datetime(df['timeStamp'], unit='ms')
 df['timeStamp'] = df['timeStamp'].dt.strftime('%m-%d %H:%M:%S')
 
 
-# fig, ax = plt.subplots(figsize=(10, 6.7), layout='constrained', constrained_layout=True, dpi=100)
-# plt.plot(df['timeStamp'], df['responseCode'], 'o-', label='Response Code', linewidth=2, markersize=10, alpha=0.8, markeredgewidth=0.5)
-# plt.plot([1,2,3], [4,5,6])
-# plt.xlabel('Horário da requisição')
-# plt.ylabel('Código de resposta')
-# plt.title('Comportamento do servidor')
-# plt.yticks([200, 403, 500])
-# # set xticks only for visible data
-# plt.xticks(df['timeStamp'], df['timeStamp'])
-# plt.margins(0.2)
-# plt.subplots_adjust(bottom=0.15)
-# plt.legend(loc='best')
+plt.subplots(figsize=(15, 6), layout='constrained', nrows=2, ncols=1, sharex=True, sharey=True)
 
-
-#plot 1:
-plt.subplots(figsize=(15, 6), layout='constrained')
+#========================================================= plot 1:
 plt.subplot(1, 2, 1)
+plt.yticks(df['responseCode'].values)
 plt.plot(df['timeStamp'], df['responseCode'], 'o-', label='Response Code')
 plt.legend(loc='best')
 
-#plot 2:
-x = df['responseCode'] == 200
-# count the number of occurrences of true in x
-print(x.value_counts()[True])
-lista_total_response_codes = []
-total_code_200 = 0;
-for i in range(len(df['responseCode'])):
-   print(df['responseCode'][i])
-   if df['responseCode'][i] == 200:
-      total_code_200 += 1
-
-lista_total_response_codes.append(df['responseCode'][i])
-   
+#========================================================= plot 2:
+response_code_200_count = (df['responseCode'] == 200).sum()
+response_code_403_count = (df['responseCode'] == 403).sum()
+response_code_500_count = (df['responseCode'] == 500).sum()
 
 plt.subplot(1, 2, 2)
-plt.bar(df['responseMessage'], [3], label='Response Code')
-
+plt.bar(['Ok'], [response_code_200_count], label='Ok', color='green')
+plt.bar(['Forbidden'], [response_code_403_count], label='Forbidden', color='orange')
+plt.bar(['Internal Server Error'], [response_code_500_count], label='Internal Server Error', color='red')
 plt.legend(loc='best')
+
 plt.show()
