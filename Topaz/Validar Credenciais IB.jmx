@@ -74,14 +74,6 @@ vars.put(&quot;base64Credentials&quot;, new String(encodedUsernamePassword));</s
               <stringProp name="Header.value">application/json</stringProp>
             </elementProp>
             <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Content-Length</stringProp>
-              <stringProp name="Header.value">&lt;calculated when request is sent&gt;</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Host</stringProp>
-              <stringProp name="Header.value">&lt;calculated when request is sent&gt;</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
               <stringProp name="Header.value">basic ${base64Credentials}</stringProp>
             </elementProp>
@@ -97,7 +89,7 @@ vars.put(&quot;base64Credentials&quot;, new String(encodedUsernamePassword));</s
                 <stringProp name="Argument.value">{&#xd;
     &quot;pessoaCC&quot;: {&#xd;
         &quot;contaCorrente&quot;: {&#xd;
-            &quot;codigoConta&quot;: 6686230,&#xd;
+            &quot;codigoConta&quot;: 6686231,&#xd;
             &quot;cooperativa&quot;: {&#xd;
                 &quot;codigo&quot;: 1&#xd;
             }&#xd;

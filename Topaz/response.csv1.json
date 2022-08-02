@@ -1,0 +1,12 @@
+{
+  "type" : "B",
+  "code" : "2002",
+  "msg" : "Conta nao habilitada! ",
+  "fault" : {
+    "Body" : {
+      "CECRED" : {
+        "dsmsgerr" : "Conta nao habilitada! "
+      }
+    }
+  }
+}

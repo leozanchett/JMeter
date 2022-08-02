@@ -1,0 +1,9 @@
+{
+  "configuracaoAcessoDigital" : {
+    "prazoValidade" : {
+      "codigo" : 0
+    },
+    "quantDiasAntesBloq" : 826,
+    "quantDiasEmAlerta" : 2168
+  }
+}
