@@ -89,7 +89,7 @@ vars.put(&quot;base64Credentials&quot;, new String(encodedUsernamePassword));</s
                 <stringProp name="Argument.value">{&#xd;
     &quot;pessoaCC&quot;: {&#xd;
         &quot;contaCorrente&quot;: {&#xd;
-            &quot;codigoConta&quot;: 6686231,&#xd;
+            &quot;codigoConta&quot;: 6686230,&#xd;
             &quot;cooperativa&quot;: {&#xd;
                 &quot;codigo&quot;: 1&#xd;
             }&#xd;

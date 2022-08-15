@@ -2,3 +2,7 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1659456551260,1108,HTTP Request,200,OK,Validar Credenciais IB 1-1,text,true,,388,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1108,0,328
 1659456827261,1587,HTTP Request,500,Internal Server Error,Validar Credenciais IB 1-1,text,false,,424,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1587,0,324
 1659466827261,1587,HTTP Request,403,Internal Server Error,Validar Credenciais IB 1-1,text,false,,424,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1587,0,324
+1659462890621,1111,HTTP Request,500,Internal Server Error,Validar Credenciais IB 1-1,text,false,,424,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1108,0,367
+1659462918174,1685,HTTP Request,200,OK,Validar Credenciais IB 1-1,text,true,,388,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1684,0,324
+1669462918174,1685,HTTP Request,200,OK,Validar Credenciais IB 1-1,text,true,,388,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1684,0,324
+1659467371927,1144,HTTP Request,200,OK,Validar Credenciais IB 1-1,text,true,,388,907,1,1,http://servicosinternostest.ailos.coop.br:14004/osb-soa/LoginDigitalRestService/v1/ValidarCredenciaisIB,1144,0,334
